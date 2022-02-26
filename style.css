@@ -1,0 +1,132 @@
+:root {
+  --bg-dark-primary: #500070;
+  --bg-dark-secondary: #4ea5df;
+  --container-light: rgba(210, 230, 255, 0.8);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background: radial-gradient(
+    circle,
+    var(--bg-dark-secondary),
+    var(--bg-dark-primary)
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  color: lavenderblush;
+  text-shadow: 5px 5px 5px #000;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90vw;
+  gap: 30px;
+  padding: 20px;
+  margin: 0 0 50px;
+  background-color: var(--container-light);
+  box-shadow: 0px 0px 10px #000;
+}
+
+form {
+  align-self: center;
+  border-radius: 10px;
+  color: rgb(38, 0, 65);
+  font-size: 18px;
+}
+
+.form-userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-userInfo input {
+  min-width: 96%;
+  height: 40px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid var(--bg-dark-secondary);
+  padding: 0 10px;
+}
+.form-userInfo input:focus,
+.form-userInfo input:valid {
+  border: 2px solid var(--bg-dark-primary);
+}
+
+.form-gender,
+.form-opinion,
+.form-day,
+.form-suggestion {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--container-light);
+}
+.form-opinion input,
+.form-day input {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.form-suggestion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 90%;
+  position: relative;
+}
+.form-suggestion textarea {
+  font-size: 14px;
+  border: 1px solid var(--bg-dark-secondary);
+}
+
+.form-submit {
+  align-self: center;
+  margin-top: 30px;
+}
+#submit {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--bg-dark-secondary);
+  color: lavenderblush;
+  border: 1px solid var(--bg-dark-primary);
+  border-radius: 10px;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: var(--bg-dark-primary);
+  border: 1px solid var(--bg-dark-secondary);
+  box-shadow: 0px 0px 10px 5px var(--bg-dark-secondary);
+}
+#submit:active {
+  background-color: var(--bg-dark-secondary);
+  color: lavenderblush;
+}

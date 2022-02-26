@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MeuQuestionário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="form-title">
+        <h1 id="title">MeuQuestionário</h1>
+        <p id="description">Responda o formulário abaixo</p>
+      </div>
+
+      <form action="" id="survey-form">
+        <div class="form-userInfo">
+          <div class="userName">
+            <label for="name" id="name-label">Nome:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Insira seu nome"
+              required
+            />
+          </div>
+          <div class="userEmail">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Insira seu email"
+              required
+            />
+          </div>
+
+          <div class="userNumber">
+            <label for="number" id="number-label">Número:</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="Insira seu número"
+              minlength="8"
+              maxlength="15"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-gender">
+          <label for="gender">Selecione seu gênero:</label>
+          <select name="gender" id="dropdown">
+            <option value="gMale">Homem</option>
+            <option value="gFemale">Mulher</option>
+            <option value="gOther">Outro</option>
+          </select>
+        </div>
+
+        <div class="form-opinion">
+          <p>O quê você acha?</p>
+          <div>
+            <input type="radio" name="opinion" id="oYes" />
+            <label for="opinion">Com certeza</label>
+          </div>
+          <div>
+            <input type="radio" name="opinion" id="oMaybe" />
+            <label for="opinion">Talvez</label>
+          </div>
+          <div>
+            <input type="radio" name="opinion" id="oNever" />
+            <label for="opinion">Nunca mais</label>
+          </div>
+          <div>
+            <input type="radio" name="opinion" id="oWhat" />
+            <label for="opinion">Não entendi</label>
+          </div>
+        </div>
+
+        <div class="form-day">
+          <p>Escolha:</p>
+          <div>
+            <input type="checkbox" name="day" id="tomorrow" value="tomorrow" />
+            <label for="">Amanhã</label>
+          </div>
+          <div>
+            <input type="checkbox" name="day" id="today" value="today" />
+            <label for="">Hoje</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="day"
+              id="yesterday"
+              value="yesterday"
+            />
+            <label for="">Ontem</label>
+          </div>
+        </div>
+
+        <div class="form-suggestion">
+          <label for="suggestion">Informe o que você sentiu:</label>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            placeholder="Eu me senti..."
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div class="form-submit">
+          <input type="submit" id="submit" value="Concordar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
